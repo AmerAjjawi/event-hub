@@ -1,0 +1,208 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    color: #444;
+    background-color: rgba(241, 232, 232, 0.822);
+    margin: 0 auto;
+
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(87, 86, 86, 0.8);
+    box-shadow: 0 4px 6px rgba(19, 18, 18, 0)
+}
+
+header h1 {
+    /*removing the margin inside the box */
+    margin: 0;
+    font-size: 2.5rem;
+    color: #007bff;
+    font-size: 1.9rem;
+}
+
+
+nav {
+    text-align: center;
+    padding: 0 25px;
+}
+
+a:hover {
+    /*adding hovering effect to the anchor links */
+    color: #ff6347;
+}
+
+
+ul {
+    /*style unordered list with a list type of none */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+li {
+    /*Changing from block elements to inline elements to create a horizontal nav bar*/
+    display: inline;
+    float: right;
+
+}
+
+li a {
+    /* targetting the anchor with css */
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+
+}
+
+
+
+#upcoming-events {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+/*article cards */
+article {
+    margin: 20px auto;
+    max-width: 550px;
+}
+
+.first-article {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  
+
+}
+
+.first-article:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.second-article {
+    background-color: rgba(179, 167, 167, 0.863);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.second-article:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.863);
+}
+
+
+
+.header-end {
+ color:#ff6347;
+}
+.hero1, .hero2 {
+    color: #007bff;
+    font-size: 1.8rem;
+    
+}
+
+.hero1-typing {
+    color: #ff6347;
+    position: relative;
+    
+}
+/**.hero1:hover, .hero2:hover {
+    color: #ff6347;
+}**/
+
+.hero1-typing::after {
+    content: " ";
+    position: absolute;
+    right: -5rem;
+    top: 0;
+    height: 100%;
+    animation: blink .3s infinite;
+   
+}
+p {
+    width: 45%
+}
+
+#past-events {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.third-article {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.third-article:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15)
+}
+
+.fourth-article {
+    background-color: rgba(179, 167, 167, 0.863);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+
+}
+
+.fourth-article:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.863);
+}
+
+#computer {
+    /*-Make an img 50% border radius-*/
+   
+    border-radius: 30%;
+    max-width: 300px;
+    object-fit: contain;
+   
+
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+   
+}
+
+#computer:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+#tech-pic {
+    max-width: 500px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; 
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity:1;
+    }
+    50% {
+        opacity:1;
+    }
+}
